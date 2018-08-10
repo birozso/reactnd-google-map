@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "title": "Oude Weteringmolen",
+        "type": "Windmill",
+        "address": "Streefkerk",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Streefkerk_-_Oude_Weteringmolen.jpg/399px-Streefkerk_-_Oude_Weteringmolen.jpg",
+        "position": {
+          "lat": 51.890530,
+          "lng":  4.735915
+        }
+    },
+
+    {
+        "id": "2",
+        "title": "Molen De Liefde",
+        "type": "Windmill",
+        "address": "Streefkerk",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Streefkerk_-_molen_De_Liefde.jpg/399px-Streefkerk_-_molen_De_Liefde.jpg",
+        "position": {
+          "lat": 51.909167,
+          "lng":  4.755556
+        }
+    },
+
+    {
+        "id": "3",
+        "title": "De Hoge Molen",
+        "type": "Windmill",
+        "address": "Nieuw-Lekkerland",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Nieuw-Lekkerland_-_Hoge_Molen.jpg/399px-Nieuw-Lekkerland_-_Hoge_Molen.jpg",
+        "position": {
+          "lat": 51.888611,
+          "lng":  4.668056
+        }
+    },
+
+    {
+        "id": "4",
+        "title": "De Zoeker",
+        "type": "Oilmill",
+        "address": "Zaandam",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Zaanse_Schans_molens_Het_Jonge_Schaap_l_en_De_Zoeker_r.jpg/399px-Zaanse_Schans_molens_Het_Jonge_Schaap_l_en_De_Zoeker_r.jpg",
+        "position": {
+          "lat": 52.476156,
+          "lng":  4.817289
+        }
+    },
+
+    {
+        "id": "5",
+        "title": "De Roos",
+        "type": "Museum",
+        "address": "Delft",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Molen_Delft.jpg/399px-Molen_Delft.jpg",
+        "position": {
+          "lat": 52.013889,
+          "lng":  4.351389
+        }
+    },
+
+    {
+        "id": "6",
+        "title": "De Hondsrug",
+        "type": "Beltmill",
+        "address": "Weerdinge",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/De_Hondsrug_3.JPG/399px-De_Hondsrug_3.JPG",
+        "position": {
+          "lat": 52.819893,
+          "lng":  6.922422
+        }
+    }
+
+]
