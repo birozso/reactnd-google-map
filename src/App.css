@@ -2,25 +2,95 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 55px;
+  padding: 0px;
   color: white;
 }
 
+#App-title {
+  display: flex;
+  width: 70%;
+  font-size: 1.5em;
+
+}
+
 .App-title {
+  -webkit-margin-before: 0.4em;
+  margin-left: 25%;
   font-size: 1.5em;
 }
 
 .App-intro {
   font-size: large;
 }
+
+#logo {
+  display: flex;
+  width: 15%;
+  right: 0px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80%;
+  margin-top: 5px;
+}
+
+#hamburger-menu {
+  display: flex;
+  width: 15%;
+}
+
+.hamburger-menu {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+  margin-left: 60%;
+  margin-top: 7px;
+}
+
+.hamburger-big-menu {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+  margin-top: 7px;
+  opacity: 1;
+  background-color: rgb(8, 8, 8);
+}
+
+.hamburger-icon {
+  width: 40px;
+  fill: white;
+  background-color: #222;
+  z-index: 90;
+}
+
+.sidebar {
+  order: 1;
+  transition: transform 1s;
+  top: 0px;
+  width: 200px;
+  position: absolute;
+  z-index: 100;
+  transform: translateX(-300px);
+  padding: 10px;
+  background-color: #222;
+  opacity: 1;
+  height: 70%;
+  overflow: none;
+  font-size: 0.5em;
+}
+
+
+.sidebar-move-in {
+  transform: translateX(0px);
+}
+
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
