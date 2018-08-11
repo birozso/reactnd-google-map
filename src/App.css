@@ -90,6 +90,17 @@
   transform: translateX(0px);
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  color: white;
+  font-size: 1.5em;
+  text-align: left;
+  padding-bottom: 0.2em;
+}
+
 
 
 @keyframes App-logo-spin {
