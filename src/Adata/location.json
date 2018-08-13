@@ -13,25 +13,25 @@
 
     {
         "id": "12",
-        "title": "Molen De Liefde",
-        "type": "Windmill",
-        "address": "Streefkerk",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Streefkerk_-_molen_De_Liefde.jpg/399px-Streefkerk_-_molen_De_Liefde.jpg",
+        "title": "De Arend",
+        "type": "Scaffoldmill",
+        "address": "Klooster",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Molen_de_Arend_juni_2013.JPG/399px-Molen_de_Arend_juni_2013.JPG",
         "position": {
-          "lat": 51.909167,
-          "lng":  4.755556
+          "lat": 52.659444,
+          "lng":  6.724444
         }
     },
 
     {
         "id": "13",
-        "title": "De Hoge Molen",
-        "type": "Windmill",
-        "address": "Nieuw-Lekkerland",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Nieuw-Lekkerland_-_Hoge_Molen.jpg/399px-Nieuw-Lekkerland_-_Hoge_Molen.jpg",
+        "title": "De Gouden Engel",
+        "type": "Scaffoldmill",
+        "address": "Koedijk",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Koedijk_-_Molen_De_Gouden_Engel_2009-09-20.jpg/399px-Koedijk_-_Molen_De_Gouden_Engel_2009-09-20.jpg",
         "position": {
-          "lat": 51.888611,
-          "lng":  4.668056
+          "lat": 52.666878,
+          "lng":  4.750961
         }
     },
 
