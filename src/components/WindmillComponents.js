@@ -9,10 +9,11 @@ import {
   import szelmalom from '../szelmalom.gif'
 
 class WindmillComponent extends Component {
+
   static propTypes = {
     // GoogleMap pass $hover props to hovered components
-    // to detect hover it uses internal mechanism, explained in x_distance_hover example
-    $hover: PropTypes.bool.isRequired,
+    // to detect hover it uses internal mechanism
+    $hover: PropTypes.bool,
     text: PropTypes.string,
     zIndex: PropTypes.number
   };
@@ -23,28 +24,27 @@ class WindmillComponent extends Component {
 
   render() {
 
-
-    const {text, zIndex} = this.props;
-
+    const {text, zIndex, $hover ,title} = this.props;
     const style = {
       ...windmillStyle,
-      zIndex: this.props.$hover ? 1000 : zIndex
+      zIndex: $hover ? 1000 : zIndex
     };
-
-    const circleStyle = this.props.$hover ? windmillCircleStyleHover : windmillCircleStyle;
-    const stickStyle = this.props.$hover ? windmillStickStyleHover : windmillStickStyle;
+    // there is a possibility to use stick as a pointer - plan to later use
+    const circleStyle = $hover ? windmillCircleStyleHover : windmillCircleStyle;
+    const stickStyle = $hover ? windmillStickStyleHover : windmillStickStyle;
 
     return (
+
        <div style={style}>
-          
           <div style={circleStyle}>
-          <img width="100" src={szelmalom} 
-    alt={`Marker of ${this.title}`} 
-    />
+            <img width="100" src={szelmalom}
+              alt={`Marker of windmill  ${title}`}
+            />
             {text}
           </div>
           <div style={stickStyle} />
        </div>
+
     );
   }
 }
