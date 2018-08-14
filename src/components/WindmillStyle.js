@@ -37,14 +37,15 @@ const windmillCircleStyleHover = {
   width: K_CIRCLE_SIZE*1.8,
   height: K_CIRCLE_SIZE*1.8,
   textAlign: 'center',
-  color: '#3f51b5',
+  color: 'blue',
   fontSize: 16,
   fontWeight: 'bold',
   padding: 0,
   cursor: 'pointer',
-  border: '4px solid #3f51b5',
-  borderRadius: '16px',
-  color: '#f44336'
+  border: '3px solid blue',
+  borderRadius: '100px',
+  backgroundColor: 'lightgray',
+  opacity: 0.7,
 
 };
 
