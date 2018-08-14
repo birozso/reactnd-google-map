@@ -10,7 +10,7 @@ const windmillStyle = {
   width: K_CIRCLE_SIZE,
   height: K_CIRCLE_SIZE + K_STICK_SIZE,
   left: -K_CIRCLE_SIZE *2,
-  top: -(K_CIRCLE_SIZE + K_STICK_SIZE)
+  top: -(K_CIRCLE_SIZE + K_STICK_SIZE),
 
 };
 
@@ -25,8 +25,8 @@ const windmillCircleStyle = {
   fontSize: 0,
   fontWeight: 'bold',
   padding: 0,
-  cursor: 'pointer'
-
+  cursor: 'pointer',
+  opacity: 0.75,
 };
 
 
@@ -45,7 +45,7 @@ const windmillCircleStyleHover = {
   border: '3px solid blue',
   borderRadius: '100px',
   backgroundColor: 'lightgray',
-  opacity: 0.7,
+  opacity: 0.95,
 
 };
 
@@ -57,7 +57,7 @@ const windmillStickStyle = {
   left: K_CIRCLE_SIZE ,
   top: K_CIRCLE_SIZE,
   width: K_STICK_WIDTH,
-  height: K_STICK_SIZE
+  height: K_STICK_SIZE,
 
 };
 
