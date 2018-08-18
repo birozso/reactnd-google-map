@@ -15,7 +15,9 @@ class WindmillComponent extends Component {
     // to detect hover it uses internal mechanism
     $hover: PropTypes.bool,
     text: PropTypes.string,
-    zIndex: PropTypes.number
+    zIndex: PropTypes.number,
+    id: PropTypes.string,
+    location: PropTypes.object,
   };
 
   static defaultProps = {};
@@ -24,10 +26,10 @@ class WindmillComponent extends Component {
 
   render() {
 
-    const {text, zIndex, $hover ,title} = this.props;
+    const {text, zIndex, $hover ,title, id, location} = this.props;
     const style = {
       ...windmillStyle,
-      zIndex: $hover ? 1000 : zIndex
+      zIndex: $hover ? 500 : zIndex
     };
     // there is a possibility to use stick as a pointer - plan to later use
     const circleStyle = $hover ? windmillCircleStyleHover : windmillCircleStyle;
@@ -35,10 +37,10 @@ class WindmillComponent extends Component {
 
     return (
 
-       <div style={style}>
-          <div style={circleStyle}>
+       <div style={style} onClick = {() => this.props.onWindmillClick()} >
+          <div style={circleStyle} >
             <img width="100" src={szelmalom}
-              alt={`Marker of windmill  ${title}`}
+              alt={`Marker of windmill of  ${title}`}
             />
             {text}
           </div>
