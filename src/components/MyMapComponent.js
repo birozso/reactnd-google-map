@@ -4,10 +4,11 @@ import PropTypes from 'prop-types'
 import shouldPureComponentUpdate from 'react';
 import { AKEY } from '../Adata/API.js';
 import '../App.css';
-import logo from '../logo.svg'
+
 import WindmillComponent from './WindmillComponents';
 import {K_CIRCLE_SIZE, K_STICK_SIZE} from './WindmillStyle.js';
 
+// import logo from '../logo.svg'
 
 class MyMapComponent extends Component {
 
@@ -20,6 +21,7 @@ class MyMapComponent extends Component {
       zoom: PropTypes.number,
       onCenterChange: PropTypes.func,
       onHoverKeyChange: PropTypes.func,
+      setFalse: PropTypes.func,
 
     };
 
@@ -35,7 +37,9 @@ class MyMapComponent extends Component {
     }
 
     _onClick = ({x, y, lat, lng, event}) => { console.log(x, y, lat, lng, event)
-    document.querySelector('.info-widow').classList.remove('info-widow-move-in')}
+      document.querySelector('.info-widow').classList.remove('info-widow-move-in')
+      this.props.setFalse();
+    }
 
     shouldComponentUpdate = shouldPureComponentUpdate;
 
@@ -47,9 +51,11 @@ class MyMapComponent extends Component {
       return distanceKoef * Math.sqrt((x - mousePos.x) * (x - mousePos.x) + (y - mousePos.y) * (y - mousePos.y));
     }
 
+
+
     render() {
 
-      const {searched, needOpen} = this.props
+      const {searched} = this.props
 
       return (
 
