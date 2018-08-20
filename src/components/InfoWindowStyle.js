@@ -1,11 +1,10 @@
-
-
 var mql = window.matchMedia('(max-width: 600px)');
+var  infoTitle, infoContent, infoSubTitle = {};
 
 function screenTest(e) {
     if (e.matches) {
     /* the viewport is 600 pixels wide or less */
-        
+
         infoTitle =  {
             maxWidth: 200,
             fontFamily: 'sans-serif',
@@ -17,7 +16,7 @@ function screenTest(e) {
             margin: 0,
             borderRadius: '10px 10px 0px 0px' ,
             zIndex: 1000,
-  
+
         };
 
         infoContent = {
@@ -63,7 +62,7 @@ function screenTest(e) {
             zIndex: 1000,
   
         };
-  
+
         infoContent = {
             maxWidth: 300,
             fontSize: '14px',
@@ -82,7 +81,7 @@ function screenTest(e) {
             opacity: 0.9,
   
         };
-  
+
         infoSubTitle = {
             fontSize: '16px',
             fontWeight: 700,
@@ -94,23 +93,6 @@ function screenTest(e) {
     }
 }
 
-
-
-
-var  infoTitle =  {
-
-
-};
-
-var infoContent = {
- 
-
-};
-
-var infoSubTitle = {
-
-
-};
 
 screenTest(mql);
 mql.addListener(screenTest);
