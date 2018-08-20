@@ -1,5 +1,40 @@
+.wrapper {
+  order: 0;
+  bottom: 0px;
+  left: -220px;
+  width: 220px;
+  position: absolute;
+  z-index: 10;
+  background-color: #222;
+  opacity: 1;
+  height: 100%;
+  overflow: none;
+
+}
+
+
+.info-widow {
+  transition: transform 1s;
+  transform: translateX(0px);
+  text-align: center;
+  padding: 0;
+  width: 220px;
+  height: 240px;
+  cursor: default;
+  background: none;
+  position: absolute;
+  bottom: 0%;
+
+}
+
+.info-widow-move-in {
+    transform: translateX(220px);
+
+}
+
 .App {
   text-align: center;
+
 }
 
 .App-header {
@@ -11,6 +46,7 @@
   height: 55px;
   padding: 0px;
   color: white;
+
 }
 
 #App-title {
@@ -18,33 +54,39 @@
   width: 70%;
   font-size: 1.5em;
 
+
 }
 
 .App-title {
   -webkit-margin-before: 0.4em;
   margin-left: 25%;
   font-size: 1.5em;
+
 }
 
 .App-intro {
   font-size: large;
+
 }
 
 #logo {
   display: flex;
   width: 15%;
   right: 0px;
+
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80%;
   margin-top: 5px;
+
 }
 
 #hamburger-menu {
   display: flex;
   width: 15%;
+
 }
 
 .hamburger-menu {
@@ -52,6 +94,7 @@
   height: 40px;
   margin-left: 60%;
   margin-top: 7px;
+
 }
 
 .hamburger-big-menu {
@@ -60,19 +103,24 @@
   margin-top: 7px;
   opacity: 1;
   background-color: rgb(8, 8, 8);
+  width: 100%;
+
 }
 
 .hamburger-big-menu :hover,
 .hamburger-menu :hover,
 ul :hover {
   cursor: pointer;
+
 }
 
 .hamburger-icon {
+  animation: App-logo-spin infinite 20s linear;
   width: 40px;
   fill: white;
   background-color: #222;
   z-index: 90;
+
 }
 
 .sidebar {
@@ -82,22 +130,32 @@ ul :hover {
   width: 200px;
   position: absolute;
   z-index: 100;
-  transform: translateX(-300px);
+  transform: translateX(0px);
   padding: 10px;
   background-color: #222;
   opacity: 1;
-  height: 70%;
+  height: 55%;
   overflow: none;
-  font-size: 0.5em;
+  font-size: 0.7em;
+  border-left: none;
+  border-top-right-radius:400px;
+  border-top-left-radius:400px;
+
 }
 
+.search-input {
+  width: 180px;
+
+}
 
 .sidebar-move-in {
-  transform: translateX(0px);
+  transform: translateX(220px);
+
 }
 
 ul {
   list-style-type: none;
+
 }
 
 li {
@@ -105,10 +163,51 @@ li {
   font-size: 1.7em;
   text-align: left;
   padding-bottom: 0.4em;
+
 }
 
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+
+}
+
+@media screen and (max-width: 600px) {
+  #App-title {
+    font-size: 0.9em;
+
+  }
+
+  .sidebar {
+    font-size: 0.6em;
+    width: 150px;
+    height: 40%;
+    padding: 5px;
+
+  }
+
+  li {
+    font-size: 1.4em;
+    padding-bottom: 0.4em;
+
+  }
+
+  ul {
+    position: relative;
+    left: -20px;
+
+  }
+
+  .search-input {
+    width: 145px;
+
+  }
+
+  .info-widow {
+    width: 150px;
+    bottom: 10%;
+
+  }
+
 }
