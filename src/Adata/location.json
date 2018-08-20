@@ -9,7 +9,10 @@
           "lat": 51.890530,
           "lng":  4.735915
         },
-        "zIndex": 2
+        "zIndex": 2,
+        "venue_id": "4b27dbcdf964a520498b24e3",
+        "alt": "photo of windmill",
+        "hour": ""
     },
 
     {
@@ -22,7 +25,10 @@
           "lat": 52.659444,
           "lng":  6.724444
         },
-        "zIndex": 2
+        "zIndex": 2,
+        "venue_id": "4d34564c2c76a143e0df83c7",
+        "alt": "photo of windmill",
+        "hour": ""
     },
 
     {
@@ -35,7 +41,10 @@
           "lat": 52.666878,
           "lng":  4.750961
         },
-        "zIndex": 2
+        "zIndex": 2,
+        "venue_id": "4bd1baa45e0cce7288e6a184",
+        "alt": "photo of windmill",
+        "hour": ""
     },
 
     {
@@ -48,7 +57,10 @@
           "lat": 52.476156,
           "lng":  4.817289
         },
-        "zIndex": 2
+        "zIndex": 2,
+        "venue_id": "4b90f430f964a520d59b33e3",
+        "alt": "photo of windmill",
+        "hour": ""
     },
 
     {
@@ -61,7 +73,10 @@
           "lat": 52.013889,
           "lng":  4.351389
         },
-        "zIndex": 1
+        "zIndex": 1,
+        "venue_id": "4be16fb78dd062b5ea473e3c",
+        "alt": "photo of windmill",
+        "hour": ""
     },
 
     {
@@ -74,7 +89,10 @@
           "lat": 52.819893,
           "lng":  6.922422
         },
-        "zIndex": 1
+        "zIndex": 1,
+        "venue_id": "4d24b9353c026ea83df38d4e",
+        "alt": "photo of windmill",
+        "hour": ""
     }
 
 ]
