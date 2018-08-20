@@ -6,20 +6,22 @@ import {
   infoSubTitle,
   } from './InfoWindowStyle.js';
 
-const InfoWindowComponent = ({ venueInfo, needOpen, closeInfoWindow }) => {
+const InfoWindowComponent = ({venueInfo}) => {
 
-    return (
+    console.log(venueInfo);
+
+    return(
 
       <div className = "info-widow" id = "infoWindow"  >
           <div style={infoTitle}>
-              Title is fetching...
+              {venueInfo.title}
           </div>
           <div style={infoContent}>
-                  <div style={infoSubTitle}>Subtitle is downloading...</div>
-                      <img src="http://maps.marnoto.com/en/5wayscustomizeinfowindow/images/vistalegre.jpg" alt="Porcelain Factory of Vista Alegre" height="115" width="83" />
-                      <p>Content is downloading from Foursquare server...</p>
-                  <div style={infoSubTitle}>Downloading...</div>
-                      <p>Content is downloading from Foursquare...</p>
+                  <div id ="subType" style={infoSubTitle}>{venueInfo.type}</div>
+                      <img src = {venueInfo.imageUrl} alt = {venueInfo.alt} height="115" width="83" />
+                      <p>For Foursquare based information of the nearest hotel, click here. Location if the windmill / Address: </p>
+                  <div id = "subtAddr" style={infoSubTitle}>{venueInfo.address}</div>
+                      <p>Opening hours: {venueInfo.hour}</p>
 
           </div>
 
