@@ -24,7 +24,8 @@
   background: none;
   position: absolute;
   bottom: 0%;
-  
+  /* display: none;
+  to improve accessibility it can be set */
 
 }
 
@@ -36,6 +37,7 @@
 
 .info-widow-move-in {
     transform: translateX(220px);
+    display: block;
 
 }
 
@@ -147,6 +149,8 @@ ul :hover {
   border-left: none;
   border-top-right-radius:400px;
   border-top-left-radius:400px;
+  /*display: none; 
+  to improve accessibility it can be set */
 
 }
 
@@ -157,7 +161,7 @@ ul :hover {
 
 .sidebar-move-in {
   transform: translateX(220px);
-
+  display: block;
 }
 
 ul {
