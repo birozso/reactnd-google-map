@@ -6,28 +6,28 @@ import {
   infoSubTitle,
   } from './InfoWindowStyle.js';
 
-const InfoWindowComponent = ({venueInfo}) => {
 
-    console.log(venueInfo);
+    const InfoWindowComponent = props => {
+
 
     return(
 
       <div className = "info-widow" id = "infoWindow"  >
           <div style={infoTitle}>
-              {venueInfo.title}
+              {props.venueInfo.title}
           </div>
-          <div style={infoContent}>
-                  <div id ="subType" style={infoSubTitle}>{venueInfo.type}</div>
-                      <img src = {venueInfo.imageUrl} alt = {venueInfo.alt} height="115" width="83" />
-                      <p>For Foursquare based information of the nearest hotel, click here. Location if the windmill / Address: </p>
-                  <div id = "subtAddr" style={infoSubTitle}>{venueInfo.address}</div>
-                      <p>Opening hours: {venueInfo.hour}</p>
+          <div style={infoContent} onClick = {() => props.infoContentClick(props.venueInfo.venue_id) } value = {props.venueInfo.venue_id} >
+                  <div id ="subType" style={infoSubTitle}>{props.venueInfo.type}</div>
+                      <img src = {props.venueInfo.imageUrl} alt = {props.venueInfo.alt} height="115" width="83" />
+                      <p>{props.venueInfo.text} </p>
+                  <div id = "subtAddr" style={infoSubTitle}>{props.venueInfo.address}</div>
+                      <p>Contact details: {props.venueInfo.contact}</p>
 
           </div>
 
       </div>
 
-	  );
+	);
 
 }
 
