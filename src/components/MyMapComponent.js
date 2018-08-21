@@ -9,6 +9,8 @@ import {K_CIRCLE_SIZE, K_STICK_SIZE} from './WindmillStyle.js';
 
 class MyMapComponent extends Component {
 
+  
+
     static propTypes = {
       center: PropTypes.oneOfType([
         PropTypes.array,
@@ -68,7 +70,10 @@ class MyMapComponent extends Component {
             distanceToMouse= {this._distanceToMouse}
             hoverDistance= {K_CIRCLE_SIZE / 1.5}
             zoom= {this.props.zoom}
-            center= {this.props.center} >
+            center= {this.props.center} 
+            tabIndex= "-1"
+            role= "application"
+          >
 
             {searched.map(location => (
                 <WindmillComponent
@@ -83,7 +88,9 @@ class MyMapComponent extends Component {
                   location= {location}
                   zIndex=  {location.zIndex}
                   onChildClick= {this._onChildClick}
-                  onWindmillClick = {this.props.onItemClick} />
+                  onWindmillClick = {this.props.onItemClick}
+                  role= "img"
+                />
 
               ))}
 
