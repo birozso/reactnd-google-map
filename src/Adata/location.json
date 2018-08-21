@@ -12,7 +12,8 @@
         "zIndex": 2,
         "venue_id": "4b27dbcdf964a520498b24e3",
         "alt": "photo of windmill",
-        "hour": ""
+        "contact": "",
+        "text": "For Foursquare based information of the nearest hotel, click here. Location of the windmill / Address: "
     },
 
     {
@@ -28,7 +29,8 @@
         "zIndex": 2,
         "venue_id": "4d34564c2c76a143e0df83c7",
         "alt": "photo of windmill",
-        "hour": ""
+        "contact": "",
+        "text": "For Foursquare based information of the nearest hotel, click here. Location of the windmill / Address: "
     },
 
     {
@@ -44,7 +46,8 @@
         "zIndex": 2,
         "venue_id": "4bd1baa45e0cce7288e6a184",
         "alt": "photo of windmill",
-        "hour": ""
+        "contact": "",
+        "text": "For Foursquare based information of the nearest hotel, click here. Location of the windmill / Address: "
     },
 
     {
@@ -60,7 +63,8 @@
         "zIndex": 2,
         "venue_id": "4b90f430f964a520d59b33e3",
         "alt": "photo of windmill",
-        "hour": ""
+        "contact": "",
+        "text": "For Foursquare based information of the nearest hotel, click here. Location of the windmill / Address: "
     },
 
     {
@@ -76,7 +80,8 @@
         "zIndex": 1,
         "venue_id": "4be16fb78dd062b5ea473e3c",
         "alt": "photo of windmill",
-        "hour": ""
+        "contact": "",
+        "text": "For Foursquare based information of the nearest hotel, click here. Location of the windmill / Address: "
     },
 
     {
@@ -92,7 +97,8 @@
         "zIndex": 1,
         "venue_id": "4d24b9353c026ea83df38d4e",
         "alt": "photo of windmill",
-        "hour": ""
+        "contact": "",
+        "text": "For Foursquare based information of the nearest hotel, click here. Location of the windmill / Address: "
     }
 
 ]
