@@ -32,7 +32,8 @@ class MenuComponent extends Component {
 <div className = "wrapper">
             <div id = "sidebar"
               className = "sidebar"
-              role = "search" >
+              role = "search" 
+              tabIndex="0">
                 <a className = "hamburger-big-menu"
                    tabIndex = "0"
                    aria-label = "Toggle Primary Menu"
@@ -58,7 +59,7 @@ class MenuComponent extends Component {
                     onChange = {event => this.unifier(event.target.value) }
 
                 />
-                <ul className = "locations-list" > {
+                <ul className = "locations-list"> {
                     this.props.searched.map((sear, index) =>
                     (<li key = {index}
                          id = {sear.id}
