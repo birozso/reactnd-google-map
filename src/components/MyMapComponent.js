@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import shouldPureComponentUpdate from 'react';
 import { AKEY } from '../Adata/API.js';
 import '../App.css';
-
 import WindmillComponent from './WindmillComponents';
 import {K_CIRCLE_SIZE, K_STICK_SIZE} from './WindmillStyle.js';
-
-// import logo from '../logo.svg'
 
 class MyMapComponent extends Component {
 
@@ -16,6 +13,7 @@ class MyMapComponent extends Component {
       center: PropTypes.oneOfType([
         PropTypes.array,
         PropTypes.object
+
       ]),
 
       zoom: PropTypes.number,
@@ -32,13 +30,14 @@ class MyMapComponent extends Component {
     }
 
     _onChildClick = (key, childProps) => {
-      this.props.onCenterChange([childProps.lat, childProps.lng])
-      console.log([childProps.lat, childProps.lng]);
+      this.props.onCenterChange([childProps.lat, childProps.lng]);
+  
     }
 
-    _onClick = ({x, y, lat, lng, event}) => { console.log(x, y, lat, lng, event)
+    _onClick = ({x, y, lat, lng, event}) => {
       document.querySelector('.info-widow').classList.remove('info-widow-move-in')
       this.props.setFalse();
+  
     }
 
     shouldComponentUpdate = shouldPureComponentUpdate;
@@ -49,8 +48,8 @@ class MyMapComponent extends Component {
       const y = markerPos.y - K_STICK_SIZE - K_CIRCLE_SIZE + 75 / 2;
       const distanceKoef =  1 ;
       return distanceKoef * Math.sqrt((x - mousePos.x) * (x - mousePos.x) + (y - mousePos.y) * (y - mousePos.y));
+  
     }
-
 
 
     render() {
