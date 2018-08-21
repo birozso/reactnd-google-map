@@ -167,9 +167,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
 
-          <section id = "hamburger-menu" tabIndex="0">
-            <a className="hamburger-menu" tabIndex="0" aria-label="Toggle Primary Menu" role="button" onClick={() => document.querySelector('#sidebar')
-                .classList.toggle('sidebar-move-in')}>
+          <section id = "hamburger-menu" tabIndex="-1">
+            <a className="hamburger-menu" tabIndex="0" aria-label="Toggle Primary Menu" role="button" onClick={() => {var sb = document.querySelector('#sidebar');
+                sb.classList.toggle('sidebar-move-in');
+                sb.setAttribute("tabIndex", "0");}
+                }
+            >
               <svg className="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
               </svg>
@@ -177,7 +180,7 @@ class App extends Component {
           </section>
 
           <section id = "App-title">
-            <h1 className="App-title">React Windmill Map</h1>
+            <h1 className="App-title" tabIndex="0" >React Windmill Map</h1>
           </section>
 
           <section id = "logo">
