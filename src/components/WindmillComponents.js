@@ -6,7 +6,9 @@ import {
   windmillStyle,
   windmillCircleStyle, windmillCircleStyleHover,
   windmillStickStyle, windmillStickStyleHover } from './WindmillStyle.js';
-  import szelmalom from '../szelmalom.gif'
+import szelmalom from '../szelmalom.gif'
+
+  // MyMapComponent passes values for creation , App receives click information and handles that.
 
 class WindmillComponent extends Component {
 
@@ -18,6 +20,7 @@ class WindmillComponent extends Component {
     zIndex: PropTypes.number,
     id: PropTypes.string,
     location: PropTypes.object,
+
   };
 
   static defaultProps = {};
@@ -26,7 +29,7 @@ class WindmillComponent extends Component {
 
   render() {
 
-    const {text, zIndex, $hover ,title, id, location} = this.props;
+    const {text, zIndex, $hover ,title, id } = this.props;
     const style = {
       ...windmillStyle,
       zIndex: $hover ? 500 : zIndex
@@ -37,7 +40,7 @@ class WindmillComponent extends Component {
 
     return (
 
-       <div style={style} onClick = {() => this.props.onWindmillClick()} >
+       <div style={style} onClick = {() => this.props.onWindmillClick(id)} value = {id}>
           <div style={circleStyle} >
             <img width="100" src={szelmalom}
               alt={`Marker of windmill of  ${title}`}
@@ -49,5 +52,7 @@ class WindmillComponent extends Component {
 
     );
   }
+
 }
+
 export default WindmillComponent;
