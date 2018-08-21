@@ -13,15 +13,15 @@ import {
     return(
 
       <div className = "info-widow" id = "infoWindow"  >
-          <div style={infoTitle}>
+          <div style={infoTitle} role="heading" aria-label="location name">
               {props.venueInfo.title}
           </div>
           <div style={infoContent} onClick = {() => props.infoContentClick(props.venueInfo.venue_id) } value = {props.venueInfo.venue_id} >
                   <div id ="subType" style={infoSubTitle}>{props.venueInfo.type}</div>
                       <img src = {props.venueInfo.imageUrl} alt = {props.venueInfo.alt} height="115" width="83" />
-                      <p>{props.venueInfo.text} </p>
-                  <div id = "subtAddr" style={infoSubTitle}>{props.venueInfo.address}</div>
-                      <p>Contact details: {props.venueInfo.contact}</p>
+                      <p role="contentinfo" aria-label="location info">{props.venueInfo.text} </p>
+                  <div id = "subtAddr" style={infoSubTitle} role="heading" aria-label="location address">{props.venueInfo.address}</div>
+                      <p role="note" aria-label="contact details">Contact details: {props.venueInfo.contact}</p>
 
           </div>
 
