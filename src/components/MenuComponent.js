@@ -24,11 +24,7 @@ class MenuComponent extends Component {
 
 
     render() {
-                const {needOpen, venueInfo} = this.props
-// access the App Component and modify the query state value and filter on it
-
-
-
+                const {needOpen, venueInfo, infoWindowClicked, updateVenue} = this.props
 
 
         return(
@@ -77,8 +73,10 @@ class MenuComponent extends Component {
 
                 {
                   <InfoWindowComponent
-                    venueInfo = {this.props.venueInfo}
+                    venueInfo = {venueInfo}
                     needOpen = {needOpen}
+                    infoContentClick = {infoWindowClicked}
+                    updateVenue = {updateVenue}
                   />
 
                 }
