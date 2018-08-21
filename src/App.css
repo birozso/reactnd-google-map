@@ -24,8 +24,15 @@
   background: none;
   position: absolute;
   bottom: 0%;
+  
 
 }
+
+.info-widow :hover {
+  cursor: pointer;
+
+}
+
 
 .info-widow-move-in {
     transform: translateX(220px);
