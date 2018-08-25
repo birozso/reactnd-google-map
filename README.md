@@ -104,7 +104,23 @@ a choosen name on the menu list (after displayed it by clicking on Hamburger men
 Filter Windmills by name by using the input search field on the right upline.
 To get info on the nearest hotel or restaurant, just click on the appeared infoWindow.
 
+## Checking Google Map API Errors in Your Browser
 
+The Maps JavaScript API writes error messages to window.console. This section explains how you can check the window.console output in Google Chrome. If you are using any other browsers, please check the developer documentation for your browser. For your reference, this is a list of tools to check window.console output in some other browsers.
+
+Console for Internet Explorer.
+Web Console for Firefox.
+Remote debugging for Android.
+Web Inspector for iOS.
+In Chrome, you can use the JavaScript Console to check window.console output as follows.
+
+To open the Developer Tools, select the menu icon > More Tools > Developer Tools.
+To open the JavaScript Console, press the ESC key on your keyboard. The ESC key will toggle the JavaScript Console. If you close the console, press the ESC key again to open it.
+If any errors or warnings occurred when loading the Maps JavaScript API, they appear as one or more lines in the console. An error or warning message has the following format:
+
+Google Maps API error: ```[ERROR CODE] [Link to API document]``` 
+<br> or <br>
+Google Maps API warning: ```[ERROR CODE] [Link to API document]```
 
 
 ## Special thanx to 
