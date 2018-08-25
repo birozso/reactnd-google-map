@@ -11,6 +11,7 @@ const windmillStyle = {
   height: K_CIRCLE_SIZE + K_STICK_SIZE,
   left: -K_CIRCLE_SIZE *2,
   top: -(K_CIRCLE_SIZE + K_STICK_SIZE),
+  
 
 };
 
@@ -18,8 +19,8 @@ const windmillCircleStyle = {
   position: 'absolute',
   left: 50,
   top: 10,
-  width: K_CIRCLE_SIZE,
-  height: K_CIRCLE_SIZE,
+  width: K_CIRCLE_SIZE*1.8,
+  height: K_CIRCLE_SIZE*1.8,
   textAlign: 'center',
   color: 'white',
   fontSize: 0,
@@ -27,29 +28,9 @@ const windmillCircleStyle = {
   padding: 0,
   cursor: 'pointer',
   opacity: 0.75,
+  border: 'none',
+  
 };
-
-
-const windmillCircleStyleHover = {
-  position: 'absolute',
-  left: 50,
-  top: 10,
-  width: K_CIRCLE_SIZE*1.8,
-  height: K_CIRCLE_SIZE*1.8,
-  textAlign: 'center',
-  color: 'blue',
-  fontSize: 16,
-  fontWeight: 'bold',
-  padding: 0,
-  cursor: 'pointer',
-  border: '3px solid blue',
-  borderRadius: '100px',
-  backgroundColor: 'lightgray',
-  opacity: 0.95,
-
-};
-
-
 
 
 const windmillStickStyle = {
@@ -69,6 +50,6 @@ const windmillStickStyleHover = {
 
 export {
   windmillStyle,
-  windmillCircleStyle, windmillCircleStyleHover,
+  windmillCircleStyle,
   windmillStickStyle, windmillStickStyleHover,
   K_CIRCLE_SIZE, K_STICK_SIZE};
