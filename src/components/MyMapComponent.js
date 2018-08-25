@@ -7,6 +7,13 @@ import '../App.css';
 import WindmillComponent from './WindmillComponents';
 import {K_CIRCLE_SIZE, K_STICK_SIZE} from './WindmillStyle.js';
 
+
+
+//Show some custom error in the UI when the Google Maps API call is failed.
+window.gm_authFailure = () => {
+  alert(' Google Map error. Please try to refresh the page or check the Authentication process. For deeper investigation please check the console messages! Please check Read Me for details.'  );
+}
+
 class MyMapComponent extends Component {
 
   
